@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Team } from './team';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'trab-1';
+ 
+  myTeam : Team
+
+  constructor() { 
+    this.myTeam = {} as Team
+    this.myTeam.name = "corinthians"
+    this.myTeam.votes =  10
+  }
+
 }
