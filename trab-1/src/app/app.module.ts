@@ -5,11 +5,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { TeamCompComponent } from './CadastroTimes/team-comp.component';
+import { ListaTimesComponent } from './lista-times/lista-times.component';
+import { TelaLoginComponent } from './tela-login/tela-login.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TeamCompComponent
+    TeamCompComponent,
+    ListaTimesComponent,
+    TelaLoginComponent
   ],
   imports: [
     BrowserModule,

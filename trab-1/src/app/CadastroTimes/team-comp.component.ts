@@ -10,23 +10,16 @@ import { Team } from './team';
 export class TeamCompComponent implements OnInit {
  
   newTeam = {} as Team
- 
+  
   teamList: Team []=[]
-
-
+  
   saveData(form: NgForm) { 
     this.teamList.push(this.newTeam)
     this.newTeam = {} as Team
     this.newTeam.votes = 0
     form.resetForm()
   }
-  sumVote(){
-    console.log("passei aqui")
-    this.newTeam.votes++
-    
-  }
-
-
+  
   ngOnInit(): void {
   }
 
