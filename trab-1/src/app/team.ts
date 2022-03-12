@@ -1,4 +1,6 @@
 export interface Team {
+
     name: string
-    votes: number
+    votes : number 
+    
 }
