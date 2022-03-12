@@ -7,8 +7,7 @@ import { Team } from '../team';
   styleUrls: ['./team-comp.component.css']
 })
 export class TeamCompComponent implements OnInit {
-
-  myTeam : Team = {} as Team
+ 
 
   ngOnInit(): void {
   }

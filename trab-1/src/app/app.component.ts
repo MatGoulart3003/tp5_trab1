@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms';
 import { Team } from './team';
 
 @Component({
@@ -8,12 +9,14 @@ import { Team } from './team';
 })
 export class AppComponent {
  
-  myTeam : Team
+  newTeam = {} as Team
+  teamList: Team [] = []
 
-  constructor() { 
-    this.myTeam = {} as Team
-    this.myTeam.name = "corinthians"
-    this.myTeam.votes =  10
+  saveData(form: NgForm) { 
+    this.teamList.push(this.newTeam)
+    this.newTeam = {} as Team
+
+    form.resetForm()
   }
 
 }

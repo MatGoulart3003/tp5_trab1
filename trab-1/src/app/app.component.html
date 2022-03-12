@@ -1,6 +1,25 @@
-<h1>Tela de Login</h1>
+<h1>Listagem de times</h1>
 
-<p>Nome: {{ myTeam.name }} </p>
-<p>Numero de votos: {{ myTeam.votes }} </p>
+<form #myForm="ngForm" (submit)="saveData(myForm)">
+    <div>
+        <label>Nome da Equipe</label>
+        <input type="text"[(ngModel)]="newTeam.name"
+        name="name" #name="ngModel">
+    </div>
+    <div *ngIf="name.dirty && name.errors?.['required']">
+        <p>O campo nome é Obrigatório</p>
+    </div>
+    <div>
+        <label>Numero de Votos</label>
+        <input type="text"[(ngModel)]=newTeam.votes
+        name="votes" #email="ngModel">
+    </div>
 
+    <input type="submit" value="Salvar" [disabled]="myForm.invalid">
+    
+    <ul>
+        <li *ngFor="let team of teamList">{{newTeam.name}} - {{newTeam.votes}} </li>
+    </ul>
+
+</form>
 <h2>vai pousão</h2>
