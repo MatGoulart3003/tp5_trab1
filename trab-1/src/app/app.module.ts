@@ -4,7 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TeamCompComponent } from './team-comp/team-comp.component';
+import { TeamCompComponent } from './CadastroTimes/team-comp.component';
 
 @NgModule({
   declarations: [

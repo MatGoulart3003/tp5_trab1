@@ -1,25 +1,4 @@
-<h1>Listagem de times</h1>
+<app-team-comp>
 
-<form #myForm="ngForm" (submit)="saveData(myForm)">
-    <div>
-        <label>Nome da Equipe</label>
-        <input type="text"[(ngModel)]="newTeam.name"
-        name="name" #name="ngModel" required minlength="5">
-    </div>
-    <div *ngIf="name.dirty && name.errors?.['required']">
-        <p>O campo nome é Obrigatório</p>
-    </div>
-    <div>
-        <label>Numero de Votos</label>
-        <input type="text"[(ngModel)]="newTeam.votes"
-        name="votes" #votes="ngModel">
-    </div>
-
-    <input type="submit" value="Salvar" [disabled]="myForm.invalid">
-    <h2>vai pousão</h2>
-    <ul>
-        <li *ngFor="let team of teamList">{{team.name}} - {{team.votes}} </li>
-    </ul>
-
-</form>
+</app-team-comp>
 
