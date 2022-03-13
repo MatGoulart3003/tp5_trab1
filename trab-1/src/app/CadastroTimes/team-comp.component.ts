@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Team } from './team';
+import { Guid } from 'guid-typescript';
 
 @Component({
   selector: 'app-team-comp',
@@ -13,10 +14,13 @@ export class TeamCompComponent implements OnInit {
   
   teamList: Team []=[]
   
+  
   saveData(form: NgForm) { 
     this.teamList.push(this.newTeam)
-    this.newTeam = {} as Team
+    this.newTeam = {} as Team   
     this.newTeam.votes = 0
+    localStorage.setItem("BD-Times", JSON.stringify(this.newTeam))
+
     form.resetForm()
   }
   
