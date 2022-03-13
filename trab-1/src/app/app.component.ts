@@ -9,5 +9,5 @@ import { Team } from './CadastroTimes/team';
 })
 export class AppComponent {
  
-  
+  title = "Trabalho1"
 }
