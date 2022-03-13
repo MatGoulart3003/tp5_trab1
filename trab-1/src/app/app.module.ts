@@ -9,7 +9,7 @@ import { TeamCompComponent } from './CadastroTimes/team-comp.component';
 import { ListaTimesComponent } from './lista-times/lista-times.component';
 import { TelaLoginComponent } from './tela-login/tela-login.component';
 import { HomeComponent } from './home/home.component';
-import { routing } from './app.routing';
+
 
 
 @NgModule({
@@ -19,7 +19,7 @@ import { routing } from './app.routing';
     ListaTimesComponent,
     TelaLoginComponent,
     HomeComponent,
-    routing
+    
   ],
   imports: [
     BrowserModule,
