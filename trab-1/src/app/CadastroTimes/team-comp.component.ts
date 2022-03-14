@@ -17,10 +17,9 @@ export class TeamCompComponent implements OnInit {
   
   saveData(form: NgForm) { 
     this.teamList.push(this.newTeam)
-    this.newTeam = {} as Team   
-    this.newTeam.votes = 0
+    this.newTeam.votes = 1
     localStorage.setItem("BD-Times", JSON.stringify(this.newTeam))
-
+    this.newTeam = {} as Team  
     form.resetForm()
   }
   
