@@ -9,6 +9,8 @@ import { TeamCompComponent } from './CadastroTimes/team-comp.component';
 import { ListaTimesComponent } from './lista-times/lista-times.component';
 import { TelaLoginComponent } from './tela-login/tela-login.component';
 import { HomeComponent } from './home/home.component';
+import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './header/header.component';
 
 
 
@@ -19,6 +21,8 @@ import { HomeComponent } from './home/home.component';
     ListaTimesComponent,
     TelaLoginComponent,
     HomeComponent,
+    FooterComponent,
+    HeaderComponent,
     
   ],
   imports: [
@@ -26,7 +30,9 @@ import { HomeComponent } from './home/home.component';
     AppRoutingModule,
     FormsModule,
     AppRoutingModule,
-    CommonModule
+    CommonModule,
+    
+
   ],
   providers: [],
   bootstrap: [AppComponent]

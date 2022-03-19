@@ -1,6 +1,7 @@
-export interface Admin{
-    
+export interface Admin {
+
     nameAdmin: string
-    senhaAdmin: string 
-        
+    senhaAdmin: string
+
 }
+

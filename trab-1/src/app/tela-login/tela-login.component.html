@@ -1,17 +1,25 @@
 <h1>Login</h1>
 
-<form>
+<form #myForm="ngForm" (submit)="doLogin()">
+
     <div>
-        <label>Digite o nome:</label>
-        <input type="text"  name="name" #name="ngModel" [(ngModel)]="user.nameAdmin">
-
-        <label>Digite sua senha:</label>
-        <input type="text"  name="senha" #name="ngModel" [(ngModel)]="user.senhaAdmin">
-
+        <label>Login:</label>
+        <input type="text" name="name" #login="ngModel" [(ngModel)]="user.nameAdmin" placeholder ="Username"required>
     </div>
-    <button (click)="login()">Clique para entrar:</button>
 
+    <div *ngIf="login.dirty || login.touched">
+        <p *ngIf="login.errors?.['required']">
+          O campo nome é obrigatório
+        </p>
+      </div>
 
-    <!--<H1><a [routerLink]="'/CadastroTimes'" >CADASTRO TIMES</a></H1>
-    -->
+    <div>
+        <label>Password:</label>
+        <input type="password" name="senha" #name="ngModel" [(ngModel)]="user.senhaAdmin" placeholder="Password" required>
+    </div>
+
+    <input type="submit" value="Submit" [disabled]="myForm.invalid">
+
+    
+  
 </form>

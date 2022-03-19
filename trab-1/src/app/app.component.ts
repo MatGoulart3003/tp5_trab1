@@ -8,6 +8,6 @@ import { Team } from './CadastroTimes/team';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
- 
+
   title = "Trabalho1"
 }
