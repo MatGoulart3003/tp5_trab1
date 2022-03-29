@@ -1,2 +1,33 @@
-<p>lista-times works!</p>
+<h1>Lista de times cadastrados</h1>
+
+<div *ngIf="TeamList[0]">
+    
+    <div>
+        
+        <table>
+            <thead>
+
+                <tr>
+                    <th>Classificação:</th>
+                    <th >Time:</th>
+                    <th >Pontuação</th>
+          
+                </tr>
+
+            </thead>
+      
+            <tbody>
+
+                <tr *ngFor="let time of TeamList; let i = index"> 
+                    <td> {{ i+1 }} </td>
+                    <td> {{ time.name }} </td>
+                    <td> {{ time.votes }} </td>
+          
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
+</div>
+
 
