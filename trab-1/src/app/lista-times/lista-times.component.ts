@@ -20,12 +20,8 @@ export class ListaTimesComponent implements OnInit {
 
   catchData (){    
 
-    if(localStorage.getItem("BD-Times")){
-      
-      const aux = localStorage.getItem("BD-Times")
-      console.log("primeiro " + aux)
-      console.log(JSON.parse(aux!))
-      this.TeamList = JSON.parse(aux!)
+    if(localStorage.getItem("BD-Times")){          
+      this.TeamList = JSON.parse(localStorage.getItem("BD-Times")!)
 
     }else{
       this.TeamList = []
