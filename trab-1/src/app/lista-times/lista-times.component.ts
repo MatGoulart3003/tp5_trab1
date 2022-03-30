@@ -7,14 +7,18 @@ import { Team } from '../CadastroTimes/team';
   styleUrls: ['./lista-times.component.css']
 })
 export class ListaTimesComponent implements OnInit {
-
  
   TeamList: Team []=[]
   newTeam = {} as Team
 
-  catchData (){
+  voting(i: number){
+    this.TeamList[i].votes++;
+    this.TeamList.sort(this.sortTeam)
+  }
 
-    
+  sortTeam = (a:Team,b: Team) => b.votes - a.votes
+
+  catchData (){    
 
     if(localStorage.getItem("BD-Times")){
       

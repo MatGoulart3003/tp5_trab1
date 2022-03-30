@@ -1,7 +1,7 @@
 <h1>Lista de times cadastrados</h1>
 
 <div *ngIf="TeamList[0]">
-    
+
     <div>
         
         <table>
@@ -9,20 +9,20 @@
 
                 <tr>
                     <th>Classificação:</th>
-                    <th >Time:</th>
-                    <th >Pontuação</th>
-          
+                    <th>Time:</th>
+                    <th>Numero de Votos</th>
+                    <th>Vote!!</th>
                 </tr>
 
             </thead>
       
             <tbody>
 
-                <tr *ngFor="let time of TeamList; let i = index"> 
+                <tr *ngFor="let xuxa of TeamList; let i = index"> 
                     <td> {{ i+1 }} </td>
-                    <td> {{ time.name }} </td>
-                    <td> {{ time.votes }} </td>
-          
+                    <td> {{ xuxa.name }} </td>
+                    <td> {{ xuxa.votes }} </td>
+                    <td><button (click)="voting(i)">Votar</button></td>          
                 </tr>
             </tbody>
 
