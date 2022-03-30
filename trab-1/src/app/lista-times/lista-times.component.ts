@@ -14,6 +14,7 @@ export class ListaTimesComponent implements OnInit {
   voting(i: number){
     this.TeamList[i].votes++;
     this.TeamList.sort(this.sortTeam)
+    localStorage.setItem("BD-Times", JSON.stringify(this.TeamList))
   }
 
   sortTeam = (a:Team,b: Team) => b.votes - a.votes

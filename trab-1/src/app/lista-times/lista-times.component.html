@@ -18,10 +18,10 @@
       
             <tbody>
 
-                <tr *ngFor="let xuxa of TeamList; let i = index"> 
+                <tr *ngFor="let team of TeamList; let i = index"> 
                     <td> {{ i+1 }} </td>
-                    <td> {{ xuxa.name }} </td>
-                    <td> {{ xuxa.votes }} </td>
+                    <td> {{ team.name }} </td>
+                    <td> {{ team.votes }} </td>
                     <td><button (click)="voting(i)">Votar</button></td>          
                 </tr>
             </tbody>
