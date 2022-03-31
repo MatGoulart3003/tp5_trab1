@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Team } from '../CadastroTimes/team';
 
+
 @Component({
   selector: 'app-lista-times',
   templateUrl: './lista-times.component.html',
@@ -35,6 +36,8 @@ export class ListaTimesComponent implements OnInit {
   
   ngOnInit(): void {
     this.catchData();
+    
   }
 
+  
 }

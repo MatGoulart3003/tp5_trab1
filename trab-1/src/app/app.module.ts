@@ -11,6 +11,7 @@ import { TelaLoginComponent } from './tela-login/tela-login.component';
 import { HomeComponent } from './home/home.component';
 import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
+import { GraficoTimesComponent } from './grafico-times/grafico-times.component';
 
 
 
@@ -23,6 +24,7 @@ import { HeaderComponent } from './header/header.component';
     HomeComponent,
     FooterComponent,
     HeaderComponent,
+    GraficoTimesComponent,
     
   ],
   imports: [

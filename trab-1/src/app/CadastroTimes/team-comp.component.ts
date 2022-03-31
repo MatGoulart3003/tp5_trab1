@@ -13,17 +13,8 @@ export class TeamCompComponent implements OnInit {
   newTeam = {} as Team
   
   teamList: Team []=[]
-  
-   /*loadData(){
-
-    if(this.teamList[0].votes){
-      console.log("oiiiii")
-      this.teamList = JSON.parse(localStorage.getItem("BD-Times")!)
-      
-    }
-       
-  }
-  */
+  data : any
+   
   saveData(form: NgForm) { 
    
     this.teamList.push(this.newTeam)
@@ -34,7 +25,11 @@ export class TeamCompComponent implements OnInit {
   }
   
   ngOnInit(): void {
-  //  this.loadData()
+    
+    this.data = localStorage.getItem("BD-Times")
+    if (this.data){
+      this.teamList = JSON.parse(this.data)
+    }
   }
 
 }

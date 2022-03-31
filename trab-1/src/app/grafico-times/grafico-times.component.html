@@ -1,0 +1,24 @@
+<div class="conteudo">
+    <div class="top">
+      <h1>Canal Dev Net Core</h1>
+    </div>
+  
+    <div class="grafico">
+      <div class="gridColuna" id="gridColuna">
+        <div class="coluna" *ngFor="let item of colunas" >
+          <div class="tituloColuna">{{item.descricao}}</div>
+          <div class="colunaPorcentagem">
+            <div class="porcentagem" [ngStyle]="{'height': montaPorcentagemColuna(item.porcentagem)}" ></div>
+          </div>
+          <div class="bolinha" [ngStyle]="{'background': item.porcentagem < 10 ? 'MistyRose' : ''}">
+            <span class="porcentagemTitulo">{{item.porcentagem}}%</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <div class="rodape">
+  
+    </div>
+  
+  </div>
