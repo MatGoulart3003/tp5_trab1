@@ -1,11 +1,20 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
 .rodape{
-    background-color: black;
+    background-color: #174e85;
+    position:absolute;
+	bottom: 0%;
+	width:100%;
+
 }
 a{
+    font-family: "Roboto", sans-serif;
     font-size: 15px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;
     margin: 5px;
 }
+
+
 
