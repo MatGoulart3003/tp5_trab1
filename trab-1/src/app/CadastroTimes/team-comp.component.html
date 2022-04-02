@@ -1,16 +1,13 @@
 <h1>Cadastro de Times</h1>
 
-<form #myForm="ngForm" (submit)="saveData(myForm)">
-    <div>
-        <label>Nome da Equipe</label>
-        <input type="text" [(ngModel)]="newTeam.name"
-        name="name" #name="ngModel">
+<form class="form" #myForm="ngForm" (submit)="saveData(myForm)">
+    <div class="cadastro">
+        <label id="descripcion">Nome da Equipe:</label>
+        <br>
+        <input id="time" type="text" [(ngModel)]="newTeam.name" name="name" #name="ngModel"
+        placeholder="Time">
     </div>
 
     <input type="submit" value="Salvar" [disabled]="myForm.invalid">
-
 </form>
 
-<br>
-
-<a [routerLink]="['/lista-times']"> Lista de Times </a>

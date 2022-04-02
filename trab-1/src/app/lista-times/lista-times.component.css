@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+.tabela{
+    border-collapse: collapse;
+}
+.cadastro{
+    text-align: center;
+}
+#descripcion{
+    font-family: fantasy;
+    color: rgb(236, 27, 27);
+    margin: 40px;
+}
+
+th, td {
+    border: 1px solid rgb(75, 74, 74);
+    padding: 10px;
+
+}
+
+th{
+    font-family: "Roboto", sans-serif;
+    color: blue;
+    font-size: 20px;
+}
+
+td{
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgb(66, 62, 62);
+}

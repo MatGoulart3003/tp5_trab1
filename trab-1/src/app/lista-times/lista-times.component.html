@@ -1,16 +1,16 @@
-<h1>Lista de times cadastrados</h1>
 
-<div *ngIf="TeamList[0]">
 
-    <div>
+<div class="cadastro" *ngIf="TeamList[0]">
+    
+    <h1 id="descripcion">Lista de times cadastrados</h1>
         
-        <table>
+        <table class="tabela">
             <thead>
 
                 <tr>
                     <th>Classificação:</th>
                     <th>Time:</th>
-                    <th>Numero de Votos</th>
+                    <th>Votos</th>
                     <th>Vote!!</th>
                 </tr>
 
@@ -22,15 +22,11 @@
                     <td> {{ i+1 }} </td>
                     <td> {{ team.name }} </td>
                     <td> {{ team.votes }} </td>
-                    <td><button (click)="voting(i)">Votar</button></td>          
+                    <td><button id="votar"(click)="voting(i)">Votar</button></td>          
                 </tr>
             </tbody>
 
         </table>
     </div>
-</div>
 
-<div>
-    <a [routerLink]="['/']">Voltar à pagina Inicial</a>
-</div>
 
