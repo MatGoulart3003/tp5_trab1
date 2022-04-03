@@ -3,10 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
+    "start": "node server",
+    "build": "ng build --prod",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
+  },
+  "engines": {
+    "node": "16.14.0",
+    "npm": "8.3.1"
   },
   "private": true,
   "dependencies": {
@@ -21,6 +25,7 @@
     "angular-chart.js": "^1.1.1",
     "chart.js": "^3.7.1",
     "chartjs-plugin-datalabels": "^2.0.0",
+    "express": "^4.17.3",
     "guid-typescript": "^1.0.9",
     "ng2-charts": "^3.0.8",
     "rxjs": "~7.5.0",
