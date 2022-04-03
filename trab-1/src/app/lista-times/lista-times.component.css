@@ -1,6 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 .tabela{
+    display: inline-block;
     border-collapse: collapse;
+    text-align: center;
 }
 .cadastro{
     text-align: center;

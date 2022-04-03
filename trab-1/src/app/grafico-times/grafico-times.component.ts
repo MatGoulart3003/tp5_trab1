@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ColunaModel } from "src/models/colunaModel"
 import { Team } from '../CadastroTimes/team';
-import { ListaTimesComponent } from '../lista-times/lista-times.component';
+
 
 @Component({
   selector: 'app-grafico-times',

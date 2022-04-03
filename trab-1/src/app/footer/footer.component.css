@@ -5,16 +5,17 @@
     position:absolute;
 	bottom: 0%;
 	width:100%;
-    margin-bottom: auto;
-
+    margin: auto;
+    padding-top: 20px;
 }
-a{
+a, p{
     font-family: "Roboto", sans-serif;
     font-size: 15px;
     text-decoration: none;
     color: rgb(255, 255, 255);
     font-weight: bold;
     margin: 5px;
+    padding: 10px;
 }
 
 
